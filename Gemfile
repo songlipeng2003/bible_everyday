@@ -43,6 +43,9 @@ gem "mongoid", "4.0.0"
 gem 'mongoid_auto_increment_id', "0.6.4"
 gem 'mongoid_rails_migrations', '1.0.0'
 
+# 表单
+gem 'simple_form', "3.0.2"
+
 # bootstrap
 gem 'bootstrap-sass', '~> 3.2.0'
 
