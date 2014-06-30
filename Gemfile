@@ -42,3 +42,9 @@ gem 'spring',        group: :development
 gem "mongoid", "4.0.0"
 gem 'mongoid_auto_increment_id', "0.6.4"
 gem 'mongoid_rails_migrations', '1.0.0'
+
+group :development, :test do
+  gem 'factory_girl_rails', '1.4.0'
+  gem 'database_cleaner'
+  gem "capybara", "~> 0.4.1"
+end
