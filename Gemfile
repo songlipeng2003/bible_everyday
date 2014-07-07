@@ -49,6 +49,9 @@ gem 'simple_form', "3.0.2"
 # bootstrap
 gem 'bootstrap-sass', '~> 3.2.0'
 
+# i18n
+gem 'rails-i18n', '~> 4.0.0'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'factory_girl_rails', '1.4.0'

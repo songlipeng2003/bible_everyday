@@ -1,0 +1,10 @@
+en:
+  simple_form:
+    "yes": '是'
+    "no": '否'
+    required:
+      text: '必须填写'
+      mark: '*'
+    error_notification:
+      default_message: "请修复如下错误:"
+
