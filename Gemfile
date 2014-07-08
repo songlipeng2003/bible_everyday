@@ -57,6 +57,7 @@ group :development, :test do
   gem 'factory_girl_rails', '1.4.0'
   gem 'database_cleaner'
   gem "capybara", "~> 2.2.0"
+  gem 'coveralls', require: false
 
   gem "quiet_assets", "~> 1.0.2"
 end
