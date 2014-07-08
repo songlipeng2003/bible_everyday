@@ -60,4 +60,6 @@ group :development, :test do
   gem 'coveralls', require: false
 
   gem "quiet_assets", "~> 1.0.2"
+
+  gem "better_errors"
 end
