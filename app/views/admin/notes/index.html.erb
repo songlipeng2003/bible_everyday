@@ -18,9 +18,9 @@
         <td><%= note.title %></td>
         <td><%= note.created_at %></td>
         <td><%= note.updated_at %></td>
-        <td><%= link_to 'Show', note %></td>
-        <td><%= link_to 'Edit', edit_note_path(note) %></td>
-        <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', admin_note_path(note) %></td>
+        <td><%= link_to 'Edit', edit_admin_note_path(note) %></td>
+        <td><%= link_to 'Destroy', admin_note_path(note), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to '添加灵修', new_note_path %>
+<%= link_to '添加灵修', new_admin_note_path %>

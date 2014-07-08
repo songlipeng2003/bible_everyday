@@ -1,4 +1,4 @@
-class NotesController < ApplicationController
+class Admin::NotesController < ApplicationController
   before_action :set_note, only: [:show, :edit, :update, :destroy]
 
   # GET /notes
