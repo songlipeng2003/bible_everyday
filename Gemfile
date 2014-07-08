@@ -56,7 +56,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'factory_girl_rails', '1.4.0'
   gem 'database_cleaner'
-  gem "capybara", "~> 0.4.1"
+  gem "capybara", "~> 2.2.0"
 
   gem "quiet_assets", "~> 1.0.2"
 end
