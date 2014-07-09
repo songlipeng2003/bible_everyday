@@ -1,2 +1,9 @@
 zh-CN:
-  
+  mongoid:
+    models:
+      note: '灵修分享'
+    attributes:
+      note:
+        id: 'ID'
+        title: '标题'
+        content: '内容'
