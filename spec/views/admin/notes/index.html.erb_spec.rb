@@ -1,14 +1,14 @@
 require 'rails_helper'
 
-RSpec.describe "notes/index", :type => :view do
+RSpec.describe "admin/notes/index", :type => :view do
   before(:each) do
-    assign(:notes, [
+    assign(:admin_notes, [
       Factory(:note),
       Factory(:note)
     ])
   end
 
-  it "renders a list of notes" do
+  it "renders a list of admin/notes" do
     render
   end
 end

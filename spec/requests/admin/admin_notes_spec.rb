@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe "Notes", :type => :request do
-  describe "GET /notes" do
+RSpec.describe "Admin::Notes", :type => :request do
+  describe "GET /admin_notes" do
     it "works! (now write some real specs)" do
-      get notes_path
+      get admin_notes_path
       expect(response.status).to be(200)
     end
   end
