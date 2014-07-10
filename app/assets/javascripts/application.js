@@ -12,6 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.easings
+//= require jquery.fullPage
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+$(function(){
+  $('#fullpage').fullpage({
+    verticalCentered: false,
+  });
+});
