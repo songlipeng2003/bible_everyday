@@ -20,9 +20,9 @@
         <td><%= note.title %></td>
         <td><%= note.created_at %></td>
         <td><%= note.updated_at %></td>
-        <td><%= link_to 'Show', admin_note_path(note) %></td>
-        <td><%= link_to 'Edit', edit_admin_note_path(note) %></td>
-        <td><%= link_to 'Destroy', admin_note_path(note), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '显示', admin_note_path(note) %></td>
+        <td><%= link_to '编辑', edit_admin_note_path(note) %></td>
+        <td><%= link_to '删除', admin_note_path(note), method: :delete, data: { confirm: '你确认吗?' } %></td>
       </tr>
     <% end %>
   </tbody>
