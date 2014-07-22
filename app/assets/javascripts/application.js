@@ -18,7 +18,9 @@
 //= require bootstrap-sprockets
 //= require_tree .
 $(function(){
-  $('#fullpage').fullpage({
-    verticalCentered: false,
-  });
+  if($('#fullpage').length>0){
+    $('#fullpage').fullpage({
+      verticalCentered: false,
+    });
+  }
 });
