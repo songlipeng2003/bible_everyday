@@ -2,8 +2,15 @@ zh-CN:
   mongoid:
     models:
       note: '灵修分享'
+      user: '用户'
     attributes:
       note:
         id: 'ID'
         title: '标题'
         content: '内容'
+      user:
+        email: 'Email'
+        password: '密码'
+        password_confirmation: '确认密码'
+        encrypted_password: '密码'
+        remember_me: '记住我'
