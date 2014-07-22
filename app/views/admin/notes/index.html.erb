@@ -1,5 +1,7 @@
 <h1>灵修管理</h1>
 
+<%= link_to '添加灵修', new_admin_note_path %>
+
 <table class="table">
   <thead>
     <tr>
@@ -26,6 +28,4 @@
   </tbody>
 </table>
 
-<br>
-
-<%= link_to '添加灵修', new_admin_note_path %>
+<%= will_paginate @notes %>

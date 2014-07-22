@@ -55,6 +55,11 @@ gem 'rails-i18n', '~> 4.0.0'
 # login
 gem 'devise', '~> 3.2.4'
 
+# 分页
+gem 'will_paginate', '~> 3.0.4'
+gem 'bootstrap-will_paginate', '~> 0.0.3'
+gem 'will_paginate_mongoid'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'factory_girl_rails', '1.4.0'

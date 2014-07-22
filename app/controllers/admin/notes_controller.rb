@@ -4,7 +4,7 @@ class Admin::NotesController < Admin::ApplicationController
   # GET /notes
   # GET /notes.json
   def index
-    @notes = Note.all
+    @notes = Note.paginate(:page => params[:page], :per_page => 10)
   end
 
   # GET /notes/1
