@@ -21,7 +21,7 @@ require 'rails_helper'
 RSpec.describe Admin::NotesController, :type => :controller do
 
   # This should return the minimal set of attributes required to create a valid
-  # Admin::Note. As you add validations to Admin::Note, be sure to
+  # Note As you add validations to Admin::Note, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
     skip("Add a hash of attributes valid for your model")
@@ -38,7 +38,7 @@ RSpec.describe Admin::NotesController, :type => :controller do
 
   describe "GET index" do
     it "assigns all admin_notes as @admin_notes" do
-      note = Admin::Note.create! valid_attributes
+      note = Notecreate! valid_attributes
       get :index, {}, valid_session
       expect(assigns(:admin_notes)).to eq([note])
     end
@@ -46,7 +46,7 @@ RSpec.describe Admin::NotesController, :type => :controller do
 
   describe "GET show" do
     it "assigns the requested admin_note as @admin_note" do
-      note = Admin::Note.create! valid_attributes
+      note = Notecreate! valid_attributes
       get :show, {:id => note.to_param}, valid_session
       expect(assigns(:admin_note)).to eq(note)
     end
@@ -61,7 +61,7 @@ RSpec.describe Admin::NotesController, :type => :controller do
 
   describe "GET edit" do
     it "assigns the requested admin_note as @admin_note" do
-      note = Admin::Note.create! valid_attributes
+      note = Notecreate! valid_attributes
       get :edit, {:id => note.to_param}, valid_session
       expect(assigns(:admin_note)).to eq(note)
     end
@@ -83,7 +83,7 @@ RSpec.describe Admin::NotesController, :type => :controller do
 
       it "redirects to the created admin_note" do
         post :create, {:admin_note => valid_attributes}, valid_session
-        expect(response).to redirect_to(Admin::Note.last)
+        expect(response).to redirect_to(Notelast)
       end
     end
 
@@ -107,20 +107,20 @@ RSpec.describe Admin::NotesController, :type => :controller do
       }
 
       it "updates the requested admin_note" do
-        note = Admin::Note.create! valid_attributes
+        note = Notecreate! valid_attributes
         put :update, {:id => note.to_param, :admin_note => new_attributes}, valid_session
         note.reload
         skip("Add assertions for updated state")
       end
 
       it "assigns the requested admin_note as @admin_note" do
-        note = Admin::Note.create! valid_attributes
+        note = Notecreate! valid_attributes
         put :update, {:id => note.to_param, :admin_note => valid_attributes}, valid_session
         expect(assigns(:admin_note)).to eq(note)
       end
 
       it "redirects to the admin_note" do
-        note = Admin::Note.create! valid_attributes
+        note = Notecreate! valid_attributes
         put :update, {:id => note.to_param, :admin_note => valid_attributes}, valid_session
         expect(response).to redirect_to(note)
       end
@@ -128,13 +128,13 @@ RSpec.describe Admin::NotesController, :type => :controller do
 
     describe "with invalid params" do
       it "assigns the admin_note as @admin_note" do
-        note = Admin::Note.create! valid_attributes
+        note = Notecreate! valid_attributes
         put :update, {:id => note.to_param, :admin_note => invalid_attributes}, valid_session
         expect(assigns(:admin_note)).to eq(note)
       end
 
       it "re-renders the 'edit' template" do
-        note = Admin::Note.create! valid_attributes
+        note = Notecreate! valid_attributes
         put :update, {:id => note.to_param, :admin_note => invalid_attributes}, valid_session
         expect(response).to render_template("edit")
       end
@@ -143,14 +143,14 @@ RSpec.describe Admin::NotesController, :type => :controller do
 
   describe "DELETE destroy" do
     it "destroys the requested admin_note" do
-      note = Admin::Note.create! valid_attributes
+      note = Notecreate! valid_attributes
       expect {
         delete :destroy, {:id => note.to_param}, valid_session
       }.to change(Admin::Note, :count).by(-1)
     end
 
     it "redirects to the admin_notes list" do
-      note = Admin::Note.create! valid_attributes
+      note = Notecreate! valid_attributes
       delete :destroy, {:id => note.to_param}, valid_session
       expect(response).to redirect_to(admin_notes_url)
     end
