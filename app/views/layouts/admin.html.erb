@@ -24,6 +24,14 @@
             <%= link_to '灵修管理', admin_notes_path %>
           </li>
         </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a data-toggle="dropdown" href="#"><%= current_user.email %><span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li><%= link_to '注销', destroy_user_session_path, method: :delete  %></li>
+            </ul>
+          </li>
+        </div>
       </nav>
     </div>
   </header>

@@ -7,6 +7,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= yield %>
+  <header class="navbar navbar-static-top" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <%= link_to '每日灵修', admin_root_path, class: 'navbar-brand' %>
+      </div>
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav">
+          <li>
+            <%= link_to '灵修管理', admin_notes_path %>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>
