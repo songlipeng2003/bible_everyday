@@ -61,7 +61,7 @@ gem 'bootstrap-will_paginate', '~> 0.0.3'
 gem 'will_paginate_mongoid'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0.0'
+  gem 'rspec-rails', '~> 3.0.2'
   gem 'factory_girl_rails', '1.4.0'
   gem 'database_cleaner'
   gem "capybara", "~> 2.2.0"
